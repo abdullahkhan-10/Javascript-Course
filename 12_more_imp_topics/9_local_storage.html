@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storages</title>
+
+    <style>
+        .container{
+            border: 2px solid gray;
+            width: 60%;
+            height: 35vh;
+            padding: 20px;
+            margin: 15px auto;
+            background-color: lightcoral;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Saving Data on Local Storage</h1>
+        <label for="name-id">Name: </label>
+        <input type="text" class="my-name" id="name-id"> <br><br>
+
+        <label for="age-id">Age: </label>
+        <input type="number" class="my-age" id="age-id">
+        
+        <h2>My Name is : <span class="name-tag"></span>.</h2>
+        <h3>My Age is : <span class="age-tag"></span>.</h3>
+    </div>
+
+    <div class="container">
+        <h1>Saving Object on local Storage</h1>
+        <label for="name-id">Name: </label>
+        <input type="text" class="obj-name" id="name-id"> <br><br>
+
+        <label for="age-id">Age: </label>
+        <input type="number" class="obj-age" id="age-id">
+        
+        <h2>My Name is : <span class="obj-name-tag"></span>.</h2>
+        <h3>My Age is : <span class="obj-age-tag"></span>.</h3>
+    </div>
+
+    <script src="9_local_storage.js"></script>
+</body>
+</html>

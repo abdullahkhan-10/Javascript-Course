@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create Element</title>
+    </head>
+
+    <body style="background-color: black; color: white;">
+
+        <!-- It is an Empty body, I am gonna create an element and then append in the body       -->
+
+    </body>
+
+    <script>
+        // +++++++++++++++++ Create Element ++++++++++++++++++++++ 
+        const myDiv = document.createElement("div")                            // create a new element
+        console.log(myDiv);
+        myDiv.className = "main"
+        myDiv.id = "small_div"                                                // add id , class, and style etc.
+        myDiv.setAttribute("title", "generated text")
+        myDiv.style.backgroundColor = "orange"
+        myDiv.style.padding = "15px"
+        myDiv.style.textAlign = "center"
+        myDiv.style.fontSize = "25px"
+
+        myDiv.innerText = "Abdullah khan Academy"                                // add text to the element
+        // OR
+        // const myText = document.createTextNode("Abdullah khan academy")       // create and access text in variable
+        // myDiv.appendChild(myText)                                             // add text to the element
+
+        // to add the element in document body
+        document.body.appendChild(myDiv)
+    </script>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Learning</title>
+    </head>
+
+    <body style="background-color: black; color: white;">
+
+        <div class="parent">
+            <div class="child">Abu bakar</div>
+            <div class="child">Umar</div>
+            <div class="child">Usman</div>
+            <div class="child">Ali</div>
+            <div class="child">Khalid</div>
+        </div>
+    </body>
+
+    <script>
+        const myParent = document.querySelector(".parent")
+        // console.log(myParent);
+        // console.log(myParent.children);                   // it gaves an array type collection, which act the same as array.
+        // console.log(myParent.children[1].innerHTML);      // it gave the text inside the child at position 1.
+
+        // ++++++++++ for loop on that parent.children ++++++++++++++++++++++++
+        // for (let name = 0; name < myParent.children.length; name++) {
+        //     console.log(myParent.children[name].innerHTML);            
+        // }
+
+        // ++++++++++++++++++ styling, first and last child +++++++++++++++++++++
+        myParent.children[2].style.color = "blue"                // it will change the color of the child at index 2.
+        // console.log(myParent.firstElementChild);              // it will gave the first child
+        // console.log(myParent.lastElementChild);               // it will gave the last child
+
+        // ++++++++++++++++++ getting parent from child ++++++++++++++++++++++ 
+        const childOne = document.querySelector(".child")
+        // console.log(childOne);                                // it will gave one child
+        // console.log(childOne.parentElement);                 // it will gave the parent element of all child
+        // console.log(childOne.nextElementSibling);            // it will gave the next sibling
+
+        // +++++++++++++++++ child Nodes ++++++++++++++++++++++ 
+        console.log("NODES", myParent.childNodes);
+
+
+    </script>
+
+</html>

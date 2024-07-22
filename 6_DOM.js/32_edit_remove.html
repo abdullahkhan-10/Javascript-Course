@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Remove Element</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="birds">
+        <li>Pigeon</li>
+
+    </ul>
+</body>
+
+<script>
+    // +++++++++++++++++++++++++++++++ Add Element +++++++++++++++++++++++++++++++++
+    // 1. add element using innerHTML
+    // Note. this method (innerHTML) is not much affectice in term of optimization, because while adding new element, it had to parse from entire DOM tree structure.
+    function addBird(b) {
+        const myLi = document.createElement("li")
+        myLi.innerHTML = `${b}`                                 
+        document.querySelector(".birds").appendChild(myLi)
+    };
+    addBird("Eagle");
+    addBird("Parrot");
+
+
+    // 2. Adding element usind appendchild() method
+    // the most effective way, because it don't parse the entire DOM.
+    function addAnotherBird(b){
+        const myLi = document.createElement("li")   // create element
+        const myText = document.createTextNode(b)   // create and access the text in variable
+        myLi.appendChild(myText)                    // add the text to element
+
+        document.querySelector(".birds").appendChild(myLi)   // add the element to the parent
+    }
+    addAnotherBird("Sparrow")
+    addAnotherBird("PeaCock")
+
+    // +++++++++++++++++++++++++++++++ edit Element +++++++++++++++++++++++++++++++++
+    // method 1
+    const editBird = document.querySelector("li:nth-child(4)")  // select the element
+    console.log(editBird);
+
+    const newBird = document.createElement("li")      // create new element which will replace the selected element.
+    newBird.textContent = "Ostrich"                  // add text to new element
+    editBird.replaceWith(newBird)                   // replace selected element with new element
+
+    // method 2
+    const firstBird = document.querySelector("li:first-child")
+    firstBird.outerHTML = "<li>Falcon</li>"
+
+    // +++++++++++++++++++++++++++++++ Remove Element +++++++++++++++++++++++++++++++++
+    const lastBird = document.querySelector("li:last-child")
+    lastBird.remove();
+</script>
+</html>

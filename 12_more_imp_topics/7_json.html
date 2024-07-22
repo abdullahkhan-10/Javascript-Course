@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            const myXml = new XMLHttpRequest();
+            myXml.onload = function () {
+                const myObj = JSON.parse(this.responseText);
+                console.log(myObj);
+                console.log(myObj.name);
+            };
+            myXml.open("GET", "7_json_demo.txt");
+            myXml.send();
+        </script>
+    </body>
+
+</html>

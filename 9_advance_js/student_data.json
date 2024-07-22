@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Abdullah khan",
+        "age": "20",
+        "city": "Peshawar"
+    },
+    {
+        "name": "Prime Minister Imran Khan",
+        "age": "72",
+        "city": "Mia wali"
+    },
+    {
+        "name": "Muhammad Ali",
+        "age": 74,
+        "city": "Kentucky"
+    },
+    {
+        "name": "Khabib Nurmagomedov",
+        "age": "37",
+        "city": "Dagestan"
+    },
+    {
+        "name": "Manzoor Pashteen",
+        "age": "34",
+        "city": "Waziristan"
+    },
+    {
+        "name": "Babar Azam",
+        "age": "32",
+        "city": "lahore"
+    },
+    {
+        "name": "Cristiano Ronaldo",
+        "age": "37",
+        "city": "Lisbon"
+    }
+]
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                height: 40vh;
+                width: 80%;
+                padding: 10px 20px;
+                margin: 10px auto;
+                background-color: lightgreen;
+                border-radius: 30px;
+            }
+            .style1 {
+                margin: 20px;
+                border-radius: 25px;
+            }
+            
+            .style2 {
+                background-color: brown;
+                padding: 30px;
+                border-radius: 25px;
+            }
+
+            .toggle-style{
+                padding: 25px;
+                margin: 20px;
+                background-color: blueviolet;
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!------------- DOM classList add() and remove() method ------------------>
+        <div class="container">
+            <h1>DOM classList add() and remove() method</h1>
+            <button id="add-btn">Add Style</button>
+            <button id="remove-btn">Remove Style</button>
+            <div id="myDiv">
+                <p>I am A div</p>
+            </div>
+        </div>
+
+        <!------------- DOM classList toggle() method ------------------>
+        <div class="container">
+            <h1>DOM classList toggle() method</h1>
+            <button id="toggle-btn">Toggle Style</button>
+            <div id="toggleDiv">
+                <p>I am A div</p>
+            </div>
+        </div>
+
+
+        <script src="8_dom_classlist.js"></script>
+    </body>
+
+</html>

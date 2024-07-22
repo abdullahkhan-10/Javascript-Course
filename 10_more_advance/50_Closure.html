@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <button id="orange">Orange</button>
+        <button id="green">Green</button>
+    </body>
+    <script>
+        function clickHandler(color) {
+            // document.body.style.backgroundColor = `${color}`
+
+            return function () {
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+
+        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById('green').onclick = clickHandler("green")
+
+        // NOTE. 
+        // 1. if we don't add the return function, and mention the code in clickHandler() then we will get automatic background color without being clicking on the button.
+
+        // 2. But if declare inner function and the return it, And once we click on the button the function will store in clickHandler(), and it will pass it to the onClick listner 
+
+        
+    </script>
+
+</html>
